@@ -1,6 +1,7 @@
 // form, getData, DOM_Elements, create_list, loadData
 
-// Get Data
+// This function takes inputs from the HTML season and round input fields 
+// and applies them to the URL to acquire data.
 const getData = async (season, round) => {
     let response = await axios.get(
         `https://ergast.com/api/f1/${season}/${round}/driverStandings.json`
@@ -9,10 +10,12 @@ const getData = async (season, round) => {
     return response.data
 }
 
+// This checks the HTML driverTable and driverTableBody ids.
 const driverTable = document.querySelector("driverTable")
 let driverTableBody = document.querySelector("#driverTableBody")
 console.log(driverTableBody)
 
+// This function generates a table composed of the desired data points for the top 7 drivers.
 function addDriverRow(pos, name, nation, sponsor, points, page, sponsorPage){
     let html = `<tr><td>${pos}</td>
     <td><a href=${page} target="_blank" rel="noopener noreferrer">${name}</a></td>
