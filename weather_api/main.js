@@ -1,7 +1,7 @@
+import { API_key } from './env.js';
+
 // Function to request API data.
 async function getWeather(city_name){
-    // let city_name = 'Boston';
-    let API_key = '6421cde4337d2f7d36f68e90cf596c31';
     let request = new Request(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_key}`);
     let result = await fetch(request);
     let response = await result.json();
@@ -25,7 +25,7 @@ async function getWeather(city_name){
 
 }
 
-// getWeather('Boston', '6421cde4337d2f7d36f68e90cf596c31')
+// getWeather('boston')
 
 // document.getElementById('test').innerHTML = "Hello World!";
 
