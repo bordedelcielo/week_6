@@ -1,4 +1,1 @@
-I would like to publicly acknowledge my classmates who spent time helping me understand tonight's assignment. Specific thanks to devmorra for sharing his code with me.
-
-devmorra:
-https://github.com/devmorra/week6-3-hw
+I wanted to redo this assignment in an attempt to better understand the underlying concepts, particularly the retrieval step from the API.
