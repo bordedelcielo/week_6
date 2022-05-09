@@ -1,1 +1,1 @@
-I wanted to redo this assignment in an attempt to better understand the underlying concepts, particularly the retrieval step from the API.
+A JS program to display a table of racing data when a specific year and season is queried.
