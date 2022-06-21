@@ -1,4 +1,4 @@
-An extremely rudimentary Weather App using the OpenWeather API.
+A Weather App using the OpenWeather API.
 
 Should have an env.js that is written as follows:
 
